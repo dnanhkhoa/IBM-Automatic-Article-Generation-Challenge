@@ -1,1 +1,7 @@
-# IBM-Automatic-Article-Generation-Challenge
+# IBM Automatic Article Generation Challenge
+
+Demo: 
+
+## Video demo:
+
+## Model architecture:
