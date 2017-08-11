@@ -56,8 +56,8 @@ def translate_text(text):
 def normalize_text(text):
     assert isinstance(text, str), 'Text is invalid!'
     text = re.sub(r' +', ' ', text)
-    text = re.sub(r'(?:\r?\n)+', '\n', text)
     text = re.sub(r'(?:^\s+)|(?:\s+$)', '', text, flags=re.MULTILINE)
+    text = re.sub(r'(?:\r?\n)+', '\n', text)
     return text.strip()
 
 
@@ -79,9 +79,14 @@ def bing_search_images(keywords, timeout=60):
                 matcher = re.search(r'name="__RequestVerificationToken" type="hidden" value="([^"]+)"',
                                     response.content.decode(), re.IGNORECASE)
                 if matcher is not None:
+                    # payload = {
+                    #     'Query': '(%s) (%s)' % (
+                    #         ' | '.join(map(lambda s: 'site:' + s, IMAGE_SOURCES)), ' '.join(keywords)),
+                    #     'ImageType': 'Photo',
+                    #     '__RequestVerificationToken': matcher.group(1)
+                    # }
                     payload = {
-                        'Query': '(%s) (%s)' % (
-                            ' | '.join(map(lambda s: 'site:' + s, IMAGE_SOURCES)), ' '.join(keywords)),
+                        'Query': ' '.join(keywords),
                         'ImageType': 'Photo',
                         '__RequestVerificationToken': matcher.group(1)
                     }
