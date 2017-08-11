@@ -1,2 +1,5 @@
+googletrans
+flask
+flask-cors
 requests
-Pillow
+beautifulsoup4

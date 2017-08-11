@@ -1,13 +1,31 @@
-# IBM Automatic Article Generation Challenge
+# Imagest - Suggest relevant images for article
+
+** (IBM Automatic Article Generation Challenge) **
+
 
 Demo: 
 
+
 ## Video demo:
+
 
 ## Model architecture:
 
 
-Image source:
+**Services:**
+
+- Watson Natural Language Understanding API
+
+- Watson Visual Recognition API
+
+- Azure Computer Vision API
+
+- Google Translation API
+
+- Bing Image Search API
+
+
+**Image sources:**
 
 - https://www.pexels.com/
 
@@ -19,4 +37,4 @@ Image source:
 
 - https://www.pinterest.com/
 
-- https://500px.com
+- https://500px.com/

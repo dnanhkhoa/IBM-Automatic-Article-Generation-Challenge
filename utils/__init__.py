@@ -1,4 +1,3 @@
 #!/usr/bin/python
-# -*- coding: utf8 -*-
-from .api import *
+# -*- coding: utf-8 -*-
 from .utils import *
