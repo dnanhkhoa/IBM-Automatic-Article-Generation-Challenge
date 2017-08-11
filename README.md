@@ -1,6 +1,6 @@
 # Imagest - Suggest relevant images for article
 
-** (IBM Automatic Article Generation Challenge) **
+**(IBM Automatic Article Generation Challenge)**
 
 
 Demo: 
